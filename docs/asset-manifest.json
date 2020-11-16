@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/kintaikun-react/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/kintaikun-react/static/js/main.95deea37.chunk.js",
+    "main.js.map": "/kintaikun-react/static/js/main.95deea37.chunk.js.map",
+    "runtime-main.js": "/kintaikun-react/static/js/runtime-main.8eb5324c.js",
+    "runtime-main.js.map": "/kintaikun-react/static/js/runtime-main.8eb5324c.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/kintaikun-react/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.a07ba803.chunk.js": "/kintaikun-react/static/js/2.a07ba803.chunk.js",
+    "static/js/2.a07ba803.chunk.js.map": "/kintaikun-react/static/js/2.a07ba803.chunk.js.map",
+    "static/js/3.e875c49b.chunk.js": "/kintaikun-react/static/js/3.e875c49b.chunk.js",
+    "static/js/3.e875c49b.chunk.js.map": "/kintaikun-react/static/js/3.e875c49b.chunk.js.map",
+    "index.html": "/kintaikun-react/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/kintaikun-react/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.ab7136cd.chunk.css.map": "/kintaikun-react/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.a07ba803.chunk.js.LICENSE.txt": "/kintaikun-react/static/js/2.a07ba803.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8eb5324c.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.a07ba803.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.95deea37.chunk.js"
+  ]
+}
