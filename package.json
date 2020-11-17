@@ -1,6 +1,7 @@
 {
   "name": "kintaikun-react",
   "version": "0.1.0",
+  "homepage": "https://jemappellemack.github.io/kintaikun-react/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -17,6 +18,7 @@
     "date-fns": "^2.16.1",
     "date-fns-tz": "^1.0.12",
     "file-saver": "^2.0.2",
+    "gh-pages": "^3.1.0",
     "pullstate": "^1.20.3",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
@@ -29,9 +31,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -r docs && react-scripts build && mv build docs",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
