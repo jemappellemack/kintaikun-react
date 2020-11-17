@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Home() {
   const menuList = [
@@ -24,7 +25,7 @@ function Home() {
             <Card.Body key={menu.id}>
              <Card.Title>{menu.title}</Card.Title>
               <Card.Text></Card.Text>
-              <Button variant="primary" href={menu.linkTo}>選択</Button>
+              <Link className="btn btn-primary" to={menu.linkTo}>選択</Link>
             </Card.Body>
           </Card>
         </Col>
