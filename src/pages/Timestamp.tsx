@@ -41,7 +41,7 @@ function Timestamp() {
               <h1 style={{ marginBottom: '2rem' }}><Clock/></h1>
               <Card.Text hidden={ startAt ? false : true } style={{ marginBottom: '1rem' }}>出 勤 { startAt ? format(startAt, 'H:mm') : null }</Card.Text>
               <Card.Text hidden={ endAt ? false : true } style={{ marginBottom: '1rem' }}>退 勤 { endAt ? format(endAt, 'H:mm') : null }</Card.Text>
-              <Card.Text hidden={ endAt ? false : true } style={{ marginBottom: '3rem' }}>時間 {`${duration.hours}:${duration.minutes?.toString().padStart(2,'0')}`}</Card.Text>
+              <Card.Text hidden={ endAt ? false : true } style={{ marginBottom: '3rem' }}>時 間 {`${duration.hours}:${duration.minutes?.toString().padStart(2,'0')}`}</Card.Text>
               <Button variant="primary" onClick={onClickStartTime} disabled={ startAt ? true : false} >出勤</Button>
               <Button variant="primary" style={{ marginLeft: '1rem' }} onClick={onClickEndTime} disabled={( startAt ? false : true ) || ( endAt ? true : false )}>退勤</Button>
             </Card.Body>
