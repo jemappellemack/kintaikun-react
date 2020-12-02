@@ -2,6 +2,16 @@ import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { KintaiCalendarStore } from '../store/KintaiCalendarStore';
 
+export interface KintaiApplyModalProps {
+  selectdate: {
+    dateString?: string;
+  };
+
+  show?: boolean;
+
+  onHide?: () => void;
+}
+
 const onClickApply = (props: any) : void => {
   KintaiCalendarStore.update(s => {
     s[props.selectdate.dateString].status = 'applying';
@@ -9,7 +19,7 @@ const onClickApply = (props: any) : void => {
   return props.onHide();
 };
 
-function KintaiApplyModal(props:any) {
+function KintaiApplyModal(props: KintaiApplyModalProps) {
   return (
     <Modal
       {...props}

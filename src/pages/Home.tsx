@@ -20,9 +20,9 @@ function Home() {
     <>
       <Row style={{ marginTop: '2rem' }}>
        {menuList.map((menu) => (
-        <Col style={{ marginBottom: '1rem' }}>
+        <Col key={menu.id} style={{ marginBottom: '1rem' }}>
           <Card style={{ width: '18rem' }}>
-            <Card.Body key={menu.id}>
+            <Card.Body>
              <Card.Title>{menu.title}</Card.Title>
               <Card.Text></Card.Text>
               <Link className="btn btn-primary" to={menu.linkTo}>選択</Link>
