@@ -46,6 +46,26 @@ https://jemappellemack.github.io/kintaikun-react/
 
 <br>
 
+### docker-compose
+
+<br>
+
+### イメージのビルド
+```bash
+ $ docker-compose -f docker-compose-frontend.yml build
+ ```
+#### 起動
+```bash
+ $ docker-compose -f docker-compose-frontend.yml up -d
+ ```
+#### 停止
+```bash
+ $ docker-compose -f docker-compose-frontend.yml stop
+```
+
+<br>
+
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
