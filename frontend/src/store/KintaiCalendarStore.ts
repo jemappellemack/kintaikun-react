@@ -7,7 +7,7 @@ import subMonths from 'date-fns/subMonths';
 import addMonths from 'date-fns/addMonths';
 
 export interface IKintaiCalendar {
-  date:Date,
+  date: Date,
   dateString: string,
   year: string,
   month: string,
@@ -16,13 +16,13 @@ export interface IKintaiCalendar {
   startString: string;
   endString: string;
   status: string;
-  startAt: Date|null;
-  endAt: Date|null;
+  startAt: Date | null;
+  endAt: Date | null;
   duration: Duration;
 }
 
 interface IKintaiCalendarStore {
-  [key:string]: IKintaiCalendar
+  [key: string]: IKintaiCalendar
 }
 
 const createCalender = (currentDate: Date) => {
@@ -31,12 +31,12 @@ const createCalender = (currentDate: Date) => {
   const dateArray: IKintaiCalendar[] = eachDayOfInterval({ start, end }).map(date => {
     return {
       date,
-      dateString: format(date,'yyyy-MM-dd'),
+      dateString: format(date, 'yyyy-MM-dd'),
       year: format(date, 'yyyy'),
       month: format(date, 'MM'),
       day: format(date, 'dd'),
       week: format(date, 'EEEEEE'),
-      startString:'',
+      startString: '',
       endString: '',
       status: '',
       startAt: null,
@@ -54,8 +54,8 @@ const createCalender = (currentDate: Date) => {
   return dateArray;
 }
 
-const convertArrayToObject = (arr:IKintaiCalendar[]) => {
-  const obj = arr.reduce((result:any, current) => {
+const convertArrayToObject = (arr: IKintaiCalendar[]) => {
+  const obj = arr.reduce((result: { [key: string]: IKintaiCalendar }, current) => {
     result[current.dateString] = current;
     return result;
   }, {});
