@@ -37,7 +37,14 @@
   ],
   "rules": {
     // TypeScirpt なので prop-types は要らない
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "additionalHooks": "useRecoilCallback"
+      }
+    ]
   },
   // .js ファイルをオーバーライド （webpack.conig.jsなど）
   "overrides": [
